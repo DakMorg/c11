@@ -17,6 +17,7 @@ and stores them accordingly for you to access later if needed.
 
 ## Snips
 
+<img width="1903" alt="c11snip" src="https://user-images.githubusercontent.com/108765820/200203724-6e031d40-90c6-4972-9dc9-83d6351528c9.PNG">
 
 
 ## Links
