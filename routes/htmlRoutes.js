@@ -9,7 +9,7 @@ module.exports = function (app) {
     res.sendFile(path.join(__dirname, '../public/index.html'));
   });
 
-  router.get("*", (req, res) => {
+  app.get("*", (req, res) => {
     res.sendFile(path.join(__dirname, '../public/index.html'));
   })
 };

@@ -22,7 +22,7 @@ module.exports = function(app) {
         number++;
         return dbData;
       });
-      console.log(dbData);
+   
 
       stringData = JSON.stringify(dbData);
 
@@ -30,12 +30,12 @@ module.exports = function(app) {
         if (err) throw err;
       });
     });
-    res.send('Thank you for your note!');
+    res.send('Thanks for your note');
   });
 
   app.delete('/api/notes/:id', function(req, res) {
     const deleteNote = req.params.id;
-    console.log(deleteNote);
+
 
     fs.readFile('./db/db.json', (err, data) => {
       if (err) throw err;
@@ -45,7 +45,7 @@ module.exports = function(app) {
           dbData.splice([i], 1);
         }
       }
-      console.log(dbData);
+
       stringData = JSON.stringify(dbData);
 
       fs.writeFile('./db/db.json', stringData, (err, data) => {
